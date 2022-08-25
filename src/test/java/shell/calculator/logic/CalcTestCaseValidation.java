@@ -26,6 +26,13 @@ public class CalcTestCaseValidation {
 	}
 	
 	@Test
+	public void anotherAddition() {
+		int expectedResult = 30;
+		int actualResult = calc.addition(10, 20);
+		org.junit.Assert.assertEquals(expectedResult, actualResult);
+	}
+	
+	@Test
 	public void validateSubtraction() {
 		int expectedResult = 5;
 		int actualResult = calc.subtraction(10, 5);
